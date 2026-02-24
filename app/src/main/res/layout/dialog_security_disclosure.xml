@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Dialog Title -->
+    <TextView
+        android:id="@+id/tv_disclosure_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Security &amp; Privacy Disclosure"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1a1a1a"
+        android:marginBottom="12dp" />
+
+    <!-- Dialog Description -->
+    <TextView
+        android:id="@+id/tv_disclosure_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This app requires access to your device's accessibility features to automate USSD transactions."
+        android:textSize="14sp"
+        android:textColor="#424242"
+        android:marginBottom="16dp"
+        android:lineSpacingMultiplier="1.3" />
+
+    <!-- Learning Mode Explanation -->
+    <TextView
+        android:id="@+id/tv_learning_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="• Learning Mode: During your first manual transaction, the app will capture your PIN."
+        android:textSize="13sp"
+        android:textColor="#333333"
+        android:marginBottom="10dp"
+        android:lineSpacingMultiplier="1.2" />
+
+    <!-- Automation Mode Explanation -->
+    <TextView
+        android:id="@+id/tv_automation_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="• Automation Mode: The stored PIN will be automatically entered in subsequent transactions."
+        android:textSize="13sp"
+        android:textColor="#333333"
+        android:marginBottom="16dp"
+        android:lineSpacingMultiplier="1.2" />
+
+    <!-- Warning Text -->
+    <TextView
+        android:id="@+id/tv_disclosure_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚠️ Your PIN is encrypted using Android's Jetpack Security library. Never share your PIN or provide unauthorized access to this app."
+        android:textSize="12sp"
+        android:textColor="#d32f2f"
+        android:marginBottom="20dp"
+        android:lineSpacingMultiplier="1.3"
+        android:background="#ffebee"
+        android:padding="10dp" />
+
+    <!-- Accept Button -->
+    <Button
+        android:id="@+id/btn_accept_disclosure"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="I Understand - Enable Accessibility Service"
+        android:textColor="@android:color/white"
+        android:background="#2196F3"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
